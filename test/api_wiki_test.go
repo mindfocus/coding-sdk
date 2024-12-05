@@ -11,10 +11,10 @@ package openapi
 
 import (
 	"context"
+	openapiclient "github.com/mindfocus/coding-sdk"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	openapiclient "github.com/mindfocus/coding-sdk"
 )
 
 func Test_openapi_WikiAPIService(t *testing.T) {

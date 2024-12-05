@@ -22,7 +22,7 @@ var _ MappedNullable = &CreateCodingProjectRequest{}
 // CreateCodingProjectRequest struct for CreateCodingProjectRequest
 type CreateCodingProjectRequest struct {
 	// 项目描述
-	Description *string `json:"Description,omitempty"`
+	Description string `json:"Description,omitempty"`
 	// 项目名称
 	DisplayName string `json:"DisplayName"`
 	// 项目图标
@@ -64,7 +64,7 @@ func (o *CreateCodingProjectRequest) GetDescription() string {
 		var ret string
 		return ret
 	}
-	return *o.Description
+	return o.Description
 }
 
 // GetDescriptionOk returns a tuple with the Description field value if set, nil otherwise
@@ -73,7 +73,7 @@ func (o *CreateCodingProjectRequest) GetDescriptionOk() (*string, bool) {
 	if o == nil || IsNil(o.Description) {
 		return nil, false
 	}
-	return o.Description, true
+	return &o.Description, true
 }
 
 // HasDescription returns a boolean if a field has been set.
@@ -87,7 +87,7 @@ func (o *CreateCodingProjectRequest) HasDescription() bool {
 
 // SetDescription gets a reference to the given string and assigns it to the Description field.
 func (o *CreateCodingProjectRequest) SetDescription(v string) {
-	o.Description = &v
+	o.Description = v
 }
 
 // GetDisplayName returns the DisplayName field value

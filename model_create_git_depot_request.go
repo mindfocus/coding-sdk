@@ -24,11 +24,11 @@ type CreateGitDepotRequest struct {
 	// 仓库名称
 	DepotName string `json:"DepotName"`
 	// 仓库的描述信息
-	Description *string `json:"Description,omitempty"`
+	Description string `json:"Description,omitempty"`
 	// 项目id
 	ProjectId int64 `json:"ProjectId"`
 	// 仓库是否允许公开访问
-	Shared *bool `json:"Shared,omitempty"`
+	Shared bool `json:"Shared,omitempty"`
 }
 
 type _CreateGitDepotRequest CreateGitDepotRequest
@@ -82,7 +82,7 @@ func (o *CreateGitDepotRequest) GetDescription() string {
 		var ret string
 		return ret
 	}
-	return *o.Description
+	return o.Description
 }
 
 // GetDescriptionOk returns a tuple with the Description field value if set, nil otherwise
@@ -91,7 +91,7 @@ func (o *CreateGitDepotRequest) GetDescriptionOk() (*string, bool) {
 	if o == nil || IsNil(o.Description) {
 		return nil, false
 	}
-	return o.Description, true
+	return &o.Description, true
 }
 
 // HasDescription returns a boolean if a field has been set.
@@ -105,7 +105,7 @@ func (o *CreateGitDepotRequest) HasDescription() bool {
 
 // SetDescription gets a reference to the given string and assigns it to the Description field.
 func (o *CreateGitDepotRequest) SetDescription(v string) {
-	o.Description = &v
+	o.Description = v
 }
 
 // GetProjectId returns the ProjectId field value
@@ -138,7 +138,7 @@ func (o *CreateGitDepotRequest) GetShared() bool {
 		var ret bool
 		return ret
 	}
-	return *o.Shared
+	return o.Shared
 }
 
 // GetSharedOk returns a tuple with the Shared field value if set, nil otherwise
@@ -147,7 +147,7 @@ func (o *CreateGitDepotRequest) GetSharedOk() (*bool, bool) {
 	if o == nil || IsNil(o.Shared) {
 		return nil, false
 	}
-	return o.Shared, true
+	return &o.Shared, true
 }
 
 // HasShared returns a boolean if a field has been set.
@@ -161,7 +161,7 @@ func (o *CreateGitDepotRequest) HasShared() bool {
 
 // SetShared gets a reference to the given bool and assigns it to the Shared field.
 func (o *CreateGitDepotRequest) SetShared(v bool) {
-	o.Shared = &v
+	o.Shared = v
 }
 
 func (o CreateGitDepotRequest) MarshalJSON() ([]byte, error) {

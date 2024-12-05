@@ -20,9 +20,9 @@ var _ MappedNullable = &CreateProjectWithTemplate200ResponseResponse{}
 // CreateProjectWithTemplate200ResponseResponse 公共返回体
 type CreateProjectWithTemplate200ResponseResponse struct {
 	// 项目Id
-	ProjectId *int32 `json:"ProjectId,omitempty"`
+	ProjectId int64 `json:"ProjectId,omitempty"`
 	// 请求id
-	RequestId *string `json:"RequestId,omitempty"`
+	RequestId string `json:"RequestId,omitempty"`
 }
 
 // NewCreateProjectWithTemplate200ResponseResponse instantiates a new CreateProjectWithTemplate200ResponseResponse object
@@ -32,7 +32,7 @@ type CreateProjectWithTemplate200ResponseResponse struct {
 func NewCreateProjectWithTemplate200ResponseResponse() *CreateProjectWithTemplate200ResponseResponse {
 	this := CreateProjectWithTemplate200ResponseResponse{}
 	var requestId string = "xxxxx"
-	this.RequestId = &requestId
+	this.RequestId = requestId
 	return &this
 }
 
@@ -42,26 +42,26 @@ func NewCreateProjectWithTemplate200ResponseResponse() *CreateProjectWithTemplat
 func NewCreateProjectWithTemplate200ResponseResponseWithDefaults() *CreateProjectWithTemplate200ResponseResponse {
 	this := CreateProjectWithTemplate200ResponseResponse{}
 	var requestId string = "xxxxx"
-	this.RequestId = &requestId
+	this.RequestId = requestId
 	return &this
 }
 
 // GetProjectId returns the ProjectId field value if set, zero value otherwise.
-func (o *CreateProjectWithTemplate200ResponseResponse) GetProjectId() int32 {
+func (o *CreateProjectWithTemplate200ResponseResponse) GetProjectId() int64 {
 	if o == nil || IsNil(o.ProjectId) {
-		var ret int32
+		var ret int64
 		return ret
 	}
-	return *o.ProjectId
+	return o.ProjectId
 }
 
 // GetProjectIdOk returns a tuple with the ProjectId field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *CreateProjectWithTemplate200ResponseResponse) GetProjectIdOk() (*int32, bool) {
+func (o *CreateProjectWithTemplate200ResponseResponse) GetProjectIdOk() (*int64, bool) {
 	if o == nil || IsNil(o.ProjectId) {
 		return nil, false
 	}
-	return o.ProjectId, true
+	return &o.ProjectId, true
 }
 
 // HasProjectId returns a boolean if a field has been set.
@@ -74,8 +74,8 @@ func (o *CreateProjectWithTemplate200ResponseResponse) HasProjectId() bool {
 }
 
 // SetProjectId gets a reference to the given int32 and assigns it to the ProjectId field.
-func (o *CreateProjectWithTemplate200ResponseResponse) SetProjectId(v int32) {
-	o.ProjectId = &v
+func (o *CreateProjectWithTemplate200ResponseResponse) SetProjectId(v int64) {
+	o.ProjectId = v
 }
 
 // GetRequestId returns the RequestId field value if set, zero value otherwise.
@@ -84,7 +84,7 @@ func (o *CreateProjectWithTemplate200ResponseResponse) GetRequestId() string {
 		var ret string
 		return ret
 	}
-	return *o.RequestId
+	return o.RequestId
 }
 
 // GetRequestIdOk returns a tuple with the RequestId field value if set, nil otherwise
@@ -93,7 +93,7 @@ func (o *CreateProjectWithTemplate200ResponseResponse) GetRequestIdOk() (*string
 	if o == nil || IsNil(o.RequestId) {
 		return nil, false
 	}
-	return o.RequestId, true
+	return &o.RequestId, true
 }
 
 // HasRequestId returns a boolean if a field has been set.
@@ -107,7 +107,7 @@ func (o *CreateProjectWithTemplate200ResponseResponse) HasRequestId() bool {
 
 // SetRequestId gets a reference to the given string and assigns it to the RequestId field.
 func (o *CreateProjectWithTemplate200ResponseResponse) SetRequestId(v string) {
-	o.RequestId = &v
+	o.RequestId = v
 }
 
 func (o CreateProjectWithTemplate200ResponseResponse) MarshalJSON() ([]byte, error) {

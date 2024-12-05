@@ -20,9 +20,9 @@ var _ MappedNullable = &CreateGitDepot200ResponseResponse{}
 // CreateGitDepot200ResponseResponse 公共返回体
 type CreateGitDepot200ResponseResponse struct {
 	// 创建的仓库id
-	DepotId *int64 `json:"DepotId,omitempty"`
+	DepotId int64 `json:"DepotId,omitempty"`
 	// 请求id
-	RequestId *string `json:"RequestId,omitempty"`
+	RequestId string `json:"RequestId,omitempty"`
 }
 
 // NewCreateGitDepot200ResponseResponse instantiates a new CreateGitDepot200ResponseResponse object
@@ -32,7 +32,7 @@ type CreateGitDepot200ResponseResponse struct {
 func NewCreateGitDepot200ResponseResponse() *CreateGitDepot200ResponseResponse {
 	this := CreateGitDepot200ResponseResponse{}
 	var requestId string = "xxxxx"
-	this.RequestId = &requestId
+	this.RequestId = requestId
 	return &this
 }
 
@@ -42,7 +42,7 @@ func NewCreateGitDepot200ResponseResponse() *CreateGitDepot200ResponseResponse {
 func NewCreateGitDepot200ResponseResponseWithDefaults() *CreateGitDepot200ResponseResponse {
 	this := CreateGitDepot200ResponseResponse{}
 	var requestId string = "xxxxx"
-	this.RequestId = &requestId
+	this.RequestId = requestId
 	return &this
 }
 
@@ -52,7 +52,7 @@ func (o *CreateGitDepot200ResponseResponse) GetDepotId() int64 {
 		var ret int64
 		return ret
 	}
-	return *o.DepotId
+	return o.DepotId
 }
 
 // GetDepotIdOk returns a tuple with the DepotId field value if set, nil otherwise
@@ -61,7 +61,7 @@ func (o *CreateGitDepot200ResponseResponse) GetDepotIdOk() (*int64, bool) {
 	if o == nil || IsNil(o.DepotId) {
 		return nil, false
 	}
-	return o.DepotId, true
+	return &o.DepotId, true
 }
 
 // HasDepotId returns a boolean if a field has been set.
@@ -75,7 +75,7 @@ func (o *CreateGitDepot200ResponseResponse) HasDepotId() bool {
 
 // SetDepotId gets a reference to the given int64 and assigns it to the DepotId field.
 func (o *CreateGitDepot200ResponseResponse) SetDepotId(v int64) {
-	o.DepotId = &v
+	o.DepotId = v
 }
 
 // GetRequestId returns the RequestId field value if set, zero value otherwise.
@@ -84,7 +84,7 @@ func (o *CreateGitDepot200ResponseResponse) GetRequestId() string {
 		var ret string
 		return ret
 	}
-	return *o.RequestId
+	return o.RequestId
 }
 
 // GetRequestIdOk returns a tuple with the RequestId field value if set, nil otherwise
@@ -93,7 +93,7 @@ func (o *CreateGitDepot200ResponseResponse) GetRequestIdOk() (*string, bool) {
 	if o == nil || IsNil(o.RequestId) {
 		return nil, false
 	}
-	return o.RequestId, true
+	return &o.RequestId, true
 }
 
 // HasRequestId returns a boolean if a field has been set.
@@ -107,7 +107,7 @@ func (o *CreateGitDepot200ResponseResponse) HasRequestId() bool {
 
 // SetRequestId gets a reference to the given string and assigns it to the RequestId field.
 func (o *CreateGitDepot200ResponseResponse) SetRequestId(v string) {
-	o.RequestId = &v
+	o.RequestId = v
 }
 
 func (o CreateGitDepot200ResponseResponse) MarshalJSON() ([]byte, error) {

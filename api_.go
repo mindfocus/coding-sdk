@@ -2734,24 +2734,13 @@ func (a *DefaultApiService) CreateCodingCIJobByTeamTemplateExecute(r ApiCreateCo
 type ApiCreateCodingProjectRequest struct {
 	ctx context.Context
 	ApiService *DefaultApiService
-	authorization *string
-	action *string
+	action string
 	createCodingProjectRequest *CreateCodingProjectRequest
-}
 
-// 认证信息
-func (r ApiCreateCodingProjectRequest) Authorization(authorization string) ApiCreateCodingProjectRequest {
-	r.authorization = &authorization
-	return r
-}
-
-// Action
-func (r ApiCreateCodingProjectRequest) Action(action string) ApiCreateCodingProjectRequest {
-	r.action = &action
-	return r
 }
 
 func (r ApiCreateCodingProjectRequest) CreateCodingProjectRequest(createCodingProjectRequest CreateCodingProjectRequest) ApiCreateCodingProjectRequest {
+	r.action = "CreateCodingProject"
 	r.createCodingProjectRequest = &createCodingProjectRequest
 	return r
 }
@@ -2790,19 +2779,12 @@ func (a *DefaultApiService) CreateCodingProjectExecute(r ApiCreateCodingProjectR
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
 
-	localVarPath := localBasePath + "/?action=CreateCodingProject"
+	localVarPath := localBasePath + "/?action=" + r.action
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
-	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
-	}
-	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
-	}
 
-	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{"application/json"}
 
@@ -2820,7 +2802,6 @@ func (a *DefaultApiService) CreateCodingProjectExecute(r ApiCreateCodingProjectR
 	if localVarHTTPHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
-	parameterAddToHeaderOrQuery(localVarHeaderParams, "Authorization", r.authorization, "simple", "")
 	// body params
 	localVarPostBody = r.createCodingProjectRequest
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, formFiles)
@@ -2924,14 +2905,7 @@ func (a *DefaultApiService) CreateDepartmentExecute(r ApiCreateDepartmentRequest
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
-	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
-	}
-	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
-	}
 
-	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{"application/json"}
 
@@ -4558,14 +4532,7 @@ func (a *DefaultApiService) CreateGitDepotExecute(r ApiCreateGitDepotRequest) (*
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
-	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
-	}
-	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
-	}
 
-	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{"application/json"}
 
@@ -4583,7 +4550,6 @@ func (a *DefaultApiService) CreateGitDepotExecute(r ApiCreateGitDepotRequest) (*
 	if localVarHTTPHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
-	parameterAddToHeaderOrQuery(localVarHeaderParams, "Authorization", r.authorization, "simple", "")
 	// body params
 	localVarPostBody = r.createGitDepotRequest
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, formFiles)
@@ -26359,14 +26325,7 @@ func (a *DefaultApiService) DescribeGitDepotExecute(r ApiDescribeGitDepotRequest
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
-	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
-	}
-	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
-	}
 
-	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{"application/json"}
 
@@ -26384,7 +26343,6 @@ func (a *DefaultApiService) DescribeGitDepotExecute(r ApiDescribeGitDepotRequest
 	if localVarHTTPHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
-	parameterAddToHeaderOrQuery(localVarHeaderParams, "Authorization", r.authorization, "simple", "")
 	// body params
 	localVarPostBody = r.describeGitDepotRequest
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, formFiles)
