@@ -357,3 +357,4 @@ func newStrictDecoder(data []byte) *json.Decoder {
 func ReportError(format string, a ...interface{}) error {
 	return fmt.Errorf(format, a...)
 }
+
