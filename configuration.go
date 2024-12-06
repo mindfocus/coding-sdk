@@ -1,8 +1,6 @@
 /*
 CODING OPEN API
 
-
-
 API version: 1.0.0
 */
 
@@ -13,6 +11,7 @@ package openapi
 import (
 	"context"
 	"fmt"
+	"github.com/mindfocus/coding-sdk/utils"
 	"net/http"
 	"strings"
 )
@@ -144,7 +143,7 @@ func getServerIndex(ctx context.Context) (int, error) {
 		if index, ok := si.(int); ok {
 			return index, nil
 		}
-		return 0, reportError("Invalid type %T should be int", si)
+		return 0, utils.ReportError("Invalid type %T should be int", si)
 	}
 	return 0, nil
 }
@@ -153,7 +152,7 @@ func getServerOperationIndex(ctx context.Context, endpoint string) (int, error) 
 	osi := ctx.Value(ContextOperationServerIndices)
 	if osi != nil {
 		if operationIndices, ok := osi.(map[string]int); !ok {
-			return 0, reportError("Invalid type %T should be map[string]int", osi)
+			return 0, utils.ReportError("Invalid type %T should be map[string]int", osi)
 		} else {
 			index, ok := operationIndices[endpoint]
 			if ok {
@@ -170,7 +169,7 @@ func getServerVariables(ctx context.Context) (map[string]string, error) {
 		if variables, ok := sv.(map[string]string); ok {
 			return variables, nil
 		}
-		return nil, reportError("ctx value of ContextServerVariables has invalid type %T should be map[string]string", sv)
+		return nil, utils.ReportError("ctx value of ContextServerVariables has invalid type %T should be map[string]string", sv)
 	}
 	return nil, nil
 }
@@ -179,7 +178,7 @@ func getServerOperationVariables(ctx context.Context, endpoint string) (map[stri
 	osv := ctx.Value(ContextOperationServerVariables)
 	if osv != nil {
 		if operationVariables, ok := osv.(map[string]map[string]string); !ok {
-			return nil, reportError("ctx value of ContextOperationServerVariables has invalid type %T should be map[string]map[string]string", osv)
+			return nil, utils.ReportError("ctx value of ContextOperationServerVariables has invalid type %T should be map[string]map[string]string", osv)
 		} else {
 			variables, ok := operationVariables[endpoint]
 			if ok {

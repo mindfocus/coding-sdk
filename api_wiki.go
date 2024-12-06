@@ -1,8 +1,6 @@
 /*
 CODING OPEN API
 
-
-
 API version: 1.0.0
 */
 
@@ -13,6 +11,8 @@ package openapi
 import (
 	"bytes"
 	"context"
+	. "github.com/mindfocus/coding-sdk/utils"
+	. "github.com/mindfocus/coding-sdk/models"
 	"io"
 	"net/http"
 	"net/url"
@@ -87,10 +87,10 @@ func (a *WikiAPIService) CreateUploadTokenExecute(r ApiCreateUploadTokenRequest)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -216,10 +216,10 @@ func (a *WikiAPIService) CreateWikiExecute(r ApiCreateWikiRequest) (*CreateWiki2
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -345,10 +345,10 @@ func (a *WikiAPIService) CreateWikiByZipExecute(r ApiCreateWikiByZipRequest) (*C
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -474,10 +474,10 @@ func (a *WikiAPIService) DeleteWikiExecute(r ApiDeleteWikiRequest) (*DeleteAPIDo
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -603,10 +603,10 @@ func (a *WikiAPIService) DescribeImportJobStatusExecute(r ApiDescribeImportJobSt
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -732,10 +732,10 @@ func (a *WikiAPIService) DescribeUpdateJobStatusExecute(r ApiDescribeUpdateJobSt
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -861,10 +861,10 @@ func (a *WikiAPIService) DescribeWikiExecute(r ApiDescribeWikiRequest) (*ModifyW
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -990,10 +990,10 @@ func (a *WikiAPIService) DescribeWikiListExecute(r ApiDescribeWikiListRequest) (
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -1119,10 +1119,10 @@ func (a *WikiAPIService) ModifyWikiExecute(r ApiModifyWikiRequest) (*ModifyWiki2
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -1248,10 +1248,10 @@ func (a *WikiAPIService) ModifyWikiByZipExecute(r ApiModifyWikiByZipRequest) (*C
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -1377,10 +1377,10 @@ func (a *WikiAPIService) ModifyWikiOrderExecute(r ApiModifyWikiOrderRequest) (*D
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -1506,10 +1506,10 @@ func (a *WikiAPIService) ModifyWikiTitleExecute(r ApiModifyWikiTitleRequest) (*M
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")

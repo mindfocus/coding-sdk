@@ -1,8 +1,6 @@
 /*
 CODING OPEN API
 
-
-
 API version: 1.0.0
 */
 
@@ -17,6 +15,7 @@ import (
 	"encoding/xml"
 	"errors"
 	"fmt"
+	"github.com/mindfocus/coding-sdk/utils"
 	"io"
 	"log"
 	"mime/multipart"
@@ -138,7 +137,7 @@ func parameterValueToString( obj interface{}, key string ) string {
 	if reflect.TypeOf(obj).Kind() != reflect.Ptr {
 		return fmt.Sprintf("%v", obj)
 	}
-	var param,ok = obj.(MappedNullable)
+	var param,ok = obj.(utils.MappedNullable)
 	if !ok {
 		return ""
 	}
@@ -162,7 +161,7 @@ func parameterAddToHeaderOrQuery(headerOrQueryParams interface{}, keyPrefix stri
 				value = "invalid"
 
 			case reflect.Struct:
-				if t,ok := obj.(MappedNullable); ok {
+				if t,ok := obj.(utils.MappedNullable); ok {
 					dataMap,err := t.ToMap()
 					if err != nil {
 						return

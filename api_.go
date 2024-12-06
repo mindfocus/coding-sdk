@@ -1,8 +1,6 @@
 /*
 CODING OPEN API
 
-
-
 API version: 1.0.0
 */
 
@@ -13,6 +11,8 @@ package openapi
 import (
 	"bytes"
 	"context"
+	. "github.com/mindfocus/coding-sdk/utils"
+	. "github.com/mindfocus/coding-sdk/models"
 	"io"
 	"net/http"
 	"net/url"
@@ -87,10 +87,10 @@ func (a *DefaultApiService) ArchiveTestRunExecute(r ApiArchiveTestRunRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -216,10 +216,10 @@ func (a *DefaultApiService) AttachResourceScopeToPolicyExecute(r ApiAttachResour
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -345,10 +345,10 @@ func (a *DefaultApiService) AttachToResourceExecute(r ApiAttachToResourceRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -474,10 +474,10 @@ func (a *DefaultApiService) BindCdApplicationToProjectExecute(r ApiBindCdApplica
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -603,10 +603,10 @@ func (a *DefaultApiService) BoundExternalDepotExecute(r ApiBoundExternalDepotReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -732,10 +732,10 @@ func (a *DefaultApiService) CancelCdPipelineExecute(r ApiCancelCdPipelineRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -861,10 +861,10 @@ func (a *DefaultApiService) ClearCodingCIJobCacheExecute(r ApiClearCodingCIJobCa
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -990,10 +990,10 @@ func (a *DefaultApiService) CreateArtifactCreditExecute(r ApiCreateArtifactCredi
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -1119,10 +1119,10 @@ func (a *DefaultApiService) CreateArtifactPropertiesExecute(r ApiCreateArtifactP
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -1248,10 +1248,10 @@ func (a *DefaultApiService) CreateArtifactRepositoryExecute(r ApiCreateArtifactR
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -1377,10 +1377,10 @@ func (a *DefaultApiService) CreateAttachmentPrepareSignUrlExecute(r ApiCreateAtt
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -1506,10 +1506,10 @@ func (a *DefaultApiService) CreateBinaryFilesExecute(r ApiCreateBinaryFilesReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -1635,10 +1635,10 @@ func (a *DefaultApiService) CreateBranchProtectionExecute(r ApiCreateBranchProte
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -1764,10 +1764,10 @@ func (a *DefaultApiService) CreateBranchProtectionMemberExecute(r ApiCreateBranc
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -1893,10 +1893,10 @@ func (a *DefaultApiService) CreateCaseResultExecute(r ApiCreateCaseResultRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -2022,10 +2022,10 @@ func (a *DefaultApiService) CreateCdCloudAccountExecute(r ApiCreateCdCloudAccoun
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -2151,10 +2151,10 @@ func (a *DefaultApiService) CreateCdHostServerGroupExecute(r ApiCreateCdHostServ
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -2280,10 +2280,10 @@ func (a *DefaultApiService) CreateCdPipelineExecute(r ApiCreateCdPipelineRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -2409,10 +2409,10 @@ func (a *DefaultApiService) CreateCdTaskExecute(r ApiCreateCdTaskRequest) (*Crea
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -2538,10 +2538,10 @@ func (a *DefaultApiService) CreateCodingCIJobExecute(r ApiCreateCodingCIJobReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -2667,10 +2667,10 @@ func (a *DefaultApiService) CreateCodingCIJobByTeamTemplateExecute(r ApiCreateCo
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -3028,10 +3028,10 @@ func (a *DefaultApiService) CreateDepotByTemplateExecute(r ApiCreateDepotByTempl
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -3157,10 +3157,10 @@ func (a *DefaultApiService) CreateDepotFilePushRuleExecute(r ApiCreateDepotFileP
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -3286,10 +3286,10 @@ func (a *DefaultApiService) CreateDepotFilePushRulePrivilegeExecute(r ApiCreateD
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -3630,10 +3630,10 @@ func (a *DefaultApiService) CreateFileExecute(r ApiCreateFileRequest) (*CreateFi
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -3759,10 +3759,10 @@ func (a *DefaultApiService) CreateFolderExecute(r ApiCreateFolderRequest) (*Crea
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -3888,10 +3888,10 @@ func (a *DefaultApiService) CreateGitBranchExecute(r ApiCreateGitBranchRequest) 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -4017,10 +4017,10 @@ func (a *DefaultApiService) CreateGitCommitExecute(r ApiCreateGitCommitRequest) 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -4146,10 +4146,10 @@ func (a *DefaultApiService) CreateGitCommitCommentExecute(r ApiCreateGitCommitCo
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -4275,10 +4275,10 @@ func (a *DefaultApiService) CreateGitCommitNoteExecute(r ApiCreateGitCommitNoteR
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -4404,10 +4404,10 @@ func (a *DefaultApiService) CreateGitDeployKeyExecute(r ApiCreateGitDeployKeyReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -4654,10 +4654,10 @@ func (a *DefaultApiService) CreateGitFilesExecute(r ApiCreateGitFilesRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -4783,10 +4783,10 @@ func (a *DefaultApiService) CreateGitMergeReqExecute(r ApiCreateGitMergeReqReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -4912,10 +4912,10 @@ func (a *DefaultApiService) CreateGitMergeRequestExecute(r ApiCreateGitMergeRequ
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -5041,10 +5041,10 @@ func (a *DefaultApiService) CreateGitProtectedTagRuleExecute(r ApiCreateGitProte
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -5170,10 +5170,10 @@ func (a *DefaultApiService) CreateGitProtectedTagRulesExecute(r ApiCreateGitProt
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -5299,10 +5299,10 @@ func (a *DefaultApiService) CreateGitReleaseExecute(r ApiCreateGitReleaseRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -5428,10 +5428,10 @@ func (a *DefaultApiService) CreateGitTagExecute(r ApiCreateGitTagRequest) (*Crea
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -5557,10 +5557,10 @@ func (a *DefaultApiService) CreateIssueExecute(r ApiCreateIssueRequest) (*Create
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -5686,10 +5686,10 @@ func (a *DefaultApiService) CreateIssueBlockExecute(r ApiCreateIssueBlockRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -5815,10 +5815,10 @@ func (a *DefaultApiService) CreateIssueCommentExecute(r ApiCreateIssueCommentReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -5944,10 +5944,10 @@ func (a *DefaultApiService) CreateIssueModuleExecute(r ApiCreateIssueModuleReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -6073,10 +6073,10 @@ func (a *DefaultApiService) CreateIssueWorkHoursExecute(r ApiCreateIssueWorkHour
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -6202,10 +6202,10 @@ func (a *DefaultApiService) CreateIterationExecute(r ApiCreateIterationRequest) 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -6331,10 +6331,10 @@ func (a *DefaultApiService) CreateMemberSshKeyExecute(r ApiCreateMemberSshKeyReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -6460,10 +6460,10 @@ func (a *DefaultApiService) CreateMergeRequestNoteExecute(r ApiCreateMergeReques
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -6589,10 +6589,10 @@ func (a *DefaultApiService) CreateMergeRequestReviewerExecute(r ApiCreateMergeRe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -6718,10 +6718,10 @@ func (a *DefaultApiService) CreatePolicyExecute(r ApiCreatePolicyRequest) (*Modi
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -6847,10 +6847,10 @@ func (a *DefaultApiService) CreateProgramExecute(r ApiCreateProgramRequest) (*Cr
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -6976,10 +6976,10 @@ func (a *DefaultApiService) CreateProgramMemberPolicyExecute(r ApiCreateProgramM
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -7105,10 +7105,10 @@ func (a *DefaultApiService) CreateProgramProjectsExecute(r ApiCreateProgramProje
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -7234,10 +7234,10 @@ func (a *DefaultApiService) CreateProjectAnnouncementExecute(r ApiCreateProjectA
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -7363,10 +7363,10 @@ func (a *DefaultApiService) CreateProjectLabelExecute(r ApiCreateProjectLabelReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -7492,10 +7492,10 @@ func (a *DefaultApiService) CreateProjectMemberPrincipalExecute(r ApiCreateProje
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -7621,10 +7621,10 @@ func (a *DefaultApiService) CreateProjectWithTemplateExecute(r ApiCreateProjectW
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -7750,10 +7750,10 @@ func (a *DefaultApiService) CreateReadOnlyRefExecute(r ApiCreateReadOnlyRefReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -7879,10 +7879,10 @@ func (a *DefaultApiService) CreateReleaseExecute(r ApiCreateReleaseRequest) (*Mo
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -8008,10 +8008,10 @@ func (a *DefaultApiService) CreateReportExecute(r ApiCreateReportRequest) (*Crea
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -8137,10 +8137,10 @@ func (a *DefaultApiService) CreateRequirementDefectRelationExecute(r ApiCreateRe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -8266,10 +8266,10 @@ func (a *DefaultApiService) CreateSshKeyExecute(r ApiCreateSshKeyRequest) (*Crea
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -8395,10 +8395,10 @@ func (a *DefaultApiService) CreateTestCaseExecute(r ApiCreateTestCaseRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -8524,10 +8524,10 @@ func (a *DefaultApiService) CreateTestCaseSectionExecute(r ApiCreateTestCaseSect
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -8653,10 +8653,10 @@ func (a *DefaultApiService) CreateTestDefectExecute(r ApiCreateTestDefectRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -8782,10 +8782,10 @@ func (a *DefaultApiService) CreateTestResultExecute(r ApiCreateTestResultRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -8911,10 +8911,10 @@ func (a *DefaultApiService) CreateTestResultsExecute(r ApiCreateTestResultsReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -9040,10 +9040,10 @@ func (a *DefaultApiService) CreateTestRunExecute(r ApiCreateTestRunRequest) (*Mo
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -9169,10 +9169,10 @@ func (a *DefaultApiService) CreateTestStepResultExecute(r ApiCreateTestStepResul
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -9298,10 +9298,10 @@ func (a *DefaultApiService) CreateUserGroupExecute(r ApiCreateUserGroupRequest) 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -9427,10 +9427,10 @@ func (a *DefaultApiService) CreateUserGroupUsersExecute(r ApiCreateUserGroupUser
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -9556,10 +9556,10 @@ func (a *DefaultApiService) DeleteAllUsersOnGroupExecute(r ApiDeleteAllUsersOnGr
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -9685,10 +9685,10 @@ func (a *DefaultApiService) DeleteArtifactPropertiesExecute(r ApiDeleteArtifactP
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -9814,10 +9814,10 @@ func (a *DefaultApiService) DeleteBranchProtectionExecute(r ApiDeleteBranchProte
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -9943,10 +9943,10 @@ func (a *DefaultApiService) DeleteBranchProtectionMemberExecute(r ApiDeleteBranc
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -10072,10 +10072,10 @@ func (a *DefaultApiService) DeleteCdCloudAccountExecute(r ApiDeleteCdCloudAccoun
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -10201,10 +10201,10 @@ func (a *DefaultApiService) DeleteCdHostServerGroupExecute(r ApiDeleteCdHostServ
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -10330,10 +10330,10 @@ func (a *DefaultApiService) DeleteCdPipelineExecute(r ApiDeleteCdPipelineRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -10459,10 +10459,10 @@ func (a *DefaultApiService) DeleteCodingCIBuildExecute(r ApiDeleteCodingCIBuildR
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -10588,10 +10588,10 @@ func (a *DefaultApiService) DeleteCodingCIJobExecute(r ApiDeleteCodingCIJobReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -10717,10 +10717,10 @@ func (a *DefaultApiService) DeleteDepartmentExecute(r ApiDeleteDepartmentRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -10846,10 +10846,10 @@ func (a *DefaultApiService) DeleteDepotFilePushRuleExecute(r ApiDeleteDepotFileP
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -10975,10 +10975,10 @@ func (a *DefaultApiService) DeleteDepotFilePushRuleDenyPrivilegeExecute(r ApiDel
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -11104,10 +11104,10 @@ func (a *DefaultApiService) DeleteGitBranchExecute(r ApiDeleteGitBranchRequest) 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -11233,10 +11233,10 @@ func (a *DefaultApiService) DeleteGitDeployKeyExecute(r ApiDeleteGitDeployKeyReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -11362,10 +11362,10 @@ func (a *DefaultApiService) DeleteGitDepotExecute(r ApiDeleteGitDepotRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -11491,10 +11491,10 @@ func (a *DefaultApiService) DeleteGitFilesExecute(r ApiDeleteGitFilesRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -11620,10 +11620,10 @@ func (a *DefaultApiService) DeleteGitMergedBranchesExecute(r ApiDeleteGitMergedB
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -11749,10 +11749,10 @@ func (a *DefaultApiService) DeleteGitProtectedTagRuleExecute(r ApiDeleteGitProte
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -11878,10 +11878,10 @@ func (a *DefaultApiService) DeleteGitReleaseExecute(r ApiDeleteGitReleaseRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -12007,10 +12007,10 @@ func (a *DefaultApiService) DeleteGitTagExecute(r ApiDeleteGitTagRequest) (*Dele
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -12136,10 +12136,10 @@ func (a *DefaultApiService) DeleteIssueExecute(r ApiDeleteIssueRequest) (*Delete
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -12265,10 +12265,10 @@ func (a *DefaultApiService) DeleteIssueBlockExecute(r ApiDeleteIssueBlockRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -12394,10 +12394,10 @@ func (a *DefaultApiService) DeleteIssueModuleExecute(r ApiDeleteIssueModuleReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -12523,10 +12523,10 @@ func (a *DefaultApiService) DeleteIssueWorkHoursExecute(r ApiDeleteIssueWorkHour
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -12652,10 +12652,10 @@ func (a *DefaultApiService) DeleteIterationExecute(r ApiDeleteIterationRequest) 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -12781,10 +12781,10 @@ func (a *DefaultApiService) DeleteMemberSshKeyExecute(r ApiDeleteMemberSshKeyReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -12910,10 +12910,10 @@ func (a *DefaultApiService) DeleteMergeRequestNoteExecute(r ApiDeleteMergeReques
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -13039,10 +13039,10 @@ func (a *DefaultApiService) DeleteMergeRequestReviewerExecute(r ApiDeleteMergeRe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -13168,10 +13168,10 @@ func (a *DefaultApiService) DeleteOneProjectExecute(r ApiDeleteOneProjectRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -13297,10 +13297,10 @@ func (a *DefaultApiService) DeletePoliciesByIdExecute(r ApiDeletePoliciesByIdReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -13426,10 +13426,10 @@ func (a *DefaultApiService) DeleteProgramMemberPolicyExecute(r ApiDeleteProgramM
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -13555,10 +13555,10 @@ func (a *DefaultApiService) DeleteProjectAnnouncementExecute(r ApiDeleteProjectA
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -13684,10 +13684,10 @@ func (a *DefaultApiService) DeleteProjectLabelExecute(r ApiDeleteProjectLabelReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -13813,10 +13813,10 @@ func (a *DefaultApiService) DeleteProjectMemberPrincipalExecute(r ApiDeleteProje
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -13942,10 +13942,10 @@ func (a *DefaultApiService) DeleteReleaseExecute(r ApiDeleteReleaseRequest) (*De
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -14071,10 +14071,10 @@ func (a *DefaultApiService) DeleteReportExecute(r ApiDeleteReportRequest) (*Dele
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -14200,10 +14200,10 @@ func (a *DefaultApiService) DeleteRequirementDefectRelationExecute(r ApiDeleteRe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -14329,10 +14329,10 @@ func (a *DefaultApiService) DeleteSshKeyExecute(r ApiDeleteSshKeyRequest) (*Dele
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -14458,10 +14458,10 @@ func (a *DefaultApiService) DeleteTeamLevelDepotSpecExecute(r ApiDeleteTeamLevel
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -14587,10 +14587,10 @@ func (a *DefaultApiService) DeleteTeamMemberExecute(r ApiDeleteTeamMemberRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -14716,10 +14716,10 @@ func (a *DefaultApiService) DeleteTestCaseExecute(r ApiDeleteTestCaseRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -14845,10 +14845,10 @@ func (a *DefaultApiService) DeleteTestCaseSectionExecute(r ApiDeleteTestCaseSect
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -14974,10 +14974,10 @@ func (a *DefaultApiService) DeleteTestRunExecute(r ApiDeleteTestRunRequest) (*De
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -15103,10 +15103,10 @@ func (a *DefaultApiService) DeleteUserGroupByIdsExecute(r ApiDeleteUserGroupById
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -15232,10 +15232,10 @@ func (a *DefaultApiService) DeleteUserGroupUsersExecute(r ApiDeleteUserGroupUser
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -15361,10 +15361,10 @@ func (a *DefaultApiService) DescribeAgentSecretExecute(r ApiDescribeAgentSecretR
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -15490,10 +15490,10 @@ func (a *DefaultApiService) DescribeAllMergeRequestNotesExecute(r ApiDescribeAll
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -15619,10 +15619,10 @@ func (a *DefaultApiService) DescribeAllProjectLabelsExecute(r ApiDescribeAllProj
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -15748,10 +15748,10 @@ func (a *DefaultApiService) DescribeAllProjectsIssueWorkLogListExecute(r ApiDesc
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -15877,10 +15877,10 @@ func (a *DefaultApiService) DescribeArtifactChecksumsExecute(r ApiDescribeArtifa
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -16006,10 +16006,10 @@ func (a *DefaultApiService) DescribeArtifactCreditExecute(r ApiDescribeArtifactC
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -16135,10 +16135,10 @@ func (a *DefaultApiService) DescribeArtifactCreditListExecute(r ApiDescribeArtif
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -16264,10 +16264,10 @@ func (a *DefaultApiService) DescribeArtifactFileDownloadUrlExecute(r ApiDescribe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -16393,10 +16393,10 @@ func (a *DefaultApiService) DescribeArtifactPackageListExecute(r ApiDescribeArti
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -16522,10 +16522,10 @@ func (a *DefaultApiService) DescribeArtifactPropertiesExecute(r ApiDescribeArtif
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -16651,10 +16651,10 @@ func (a *DefaultApiService) DescribeArtifactRepositoryFileListExecute(r ApiDescr
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -16780,10 +16780,10 @@ func (a *DefaultApiService) DescribeArtifactRepositoryListExecute(r ApiDescribeA
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -16909,10 +16909,10 @@ func (a *DefaultApiService) DescribeArtifactVersionFileListExecute(r ApiDescribe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -17038,10 +17038,10 @@ func (a *DefaultApiService) DescribeArtifactVersionListExecute(r ApiDescribeArti
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -17167,10 +17167,10 @@ func (a *DefaultApiService) DescribeAvailablePoliciesOnResourceExecute(r ApiDesc
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -17296,10 +17296,10 @@ func (a *DefaultApiService) DescribeBlockIssueListExecute(r ApiDescribeBlockIssu
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -17425,10 +17425,10 @@ func (a *DefaultApiService) DescribeBlockedByIssueListExecute(r ApiDescribeBlock
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -17554,10 +17554,10 @@ func (a *DefaultApiService) DescribeBranchProtectionExecute(r ApiDescribeBranchP
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -17683,10 +17683,10 @@ func (a *DefaultApiService) DescribeBranchProtectionMembersExecute(r ApiDescribe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -17812,10 +17812,10 @@ func (a *DefaultApiService) DescribeBranchProtectionsExecute(r ApiDescribeBranch
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -17941,10 +17941,10 @@ func (a *DefaultApiService) DescribeCanMergeExecute(r ApiDescribeCanMergeRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -18070,10 +18070,10 @@ func (a *DefaultApiService) DescribeCdAgentMachinesExecute(r ApiDescribeCdAgentM
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -18199,10 +18199,10 @@ func (a *DefaultApiService) DescribeCdApplicationExecute(r ApiDescribeCdApplicat
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -18328,10 +18328,10 @@ func (a *DefaultApiService) DescribeCdApplicationsExecute(r ApiDescribeCdApplica
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -18457,10 +18457,10 @@ func (a *DefaultApiService) DescribeCdApplicationsByProjectExecute(r ApiDescribe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -18586,10 +18586,10 @@ func (a *DefaultApiService) DescribeCdCloudAccountsExecute(r ApiDescribeCdCloudA
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -18715,10 +18715,10 @@ func (a *DefaultApiService) DescribeCdDeployCountByApplicationsExecute(r ApiDesc
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -18844,10 +18844,10 @@ func (a *DefaultApiService) DescribeCdDeployCountByProjectExecute(r ApiDescribeC
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -18973,10 +18973,10 @@ func (a *DefaultApiService) DescribeCdDeployTimeByApplicationsExecute(r ApiDescr
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -19102,10 +19102,10 @@ func (a *DefaultApiService) DescribeCdDeployTimeByProjectExecute(r ApiDescribeCd
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -19231,10 +19231,10 @@ func (a *DefaultApiService) DescribeCdDeployTrendByApplicationsExecute(r ApiDesc
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -19360,10 +19360,10 @@ func (a *DefaultApiService) DescribeCdDeployTrendByProjectExecute(r ApiDescribeC
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -19489,10 +19489,10 @@ func (a *DefaultApiService) DescribeCdHostServerGroupExecute(r ApiDescribeCdHost
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -19618,10 +19618,10 @@ func (a *DefaultApiService) DescribeCdHostServerGroupsExecute(r ApiDescribeCdHos
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -19747,10 +19747,10 @@ func (a *DefaultApiService) DescribeCdPipelineExecute(r ApiDescribeCdPipelineReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -19876,10 +19876,10 @@ func (a *DefaultApiService) DescribeCdPipelineConfigExecute(r ApiDescribeCdPipel
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -20005,10 +20005,10 @@ func (a *DefaultApiService) DescribeCdPipelineConfigsExecute(r ApiDescribeCdPipe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -20134,10 +20134,10 @@ func (a *DefaultApiService) DescribeCdTaskExecute(r ApiDescribeCdTaskRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -20263,10 +20263,10 @@ func (a *DefaultApiService) DescribeCodeSearchExecute(r ApiDescribeCodeSearchReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -20392,10 +20392,10 @@ func (a *DefaultApiService) DescribeCodingCIBuildExecute(r ApiDescribeCodingCIBu
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -20521,10 +20521,10 @@ func (a *DefaultApiService) DescribeCodingCIBuildArtifactsExecute(r ApiDescribeC
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -20650,10 +20650,10 @@ func (a *DefaultApiService) DescribeCodingCIBuildEnvsExecute(r ApiDescribeCoding
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -20779,10 +20779,10 @@ func (a *DefaultApiService) DescribeCodingCIBuildHtmlReportsExecute(r ApiDescrib
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -20908,10 +20908,10 @@ func (a *DefaultApiService) DescribeCodingCIBuildLogExecute(r ApiDescribeCodingC
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -21037,10 +21037,10 @@ func (a *DefaultApiService) DescribeCodingCIBuildLogRawExecute(r ApiDescribeCodi
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -21166,10 +21166,10 @@ func (a *DefaultApiService) DescribeCodingCIBuildMetricsExecute(r ApiDescribeCod
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -21295,10 +21295,10 @@ func (a *DefaultApiService) DescribeCodingCIBuildStageExecute(r ApiDescribeCodin
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -21424,10 +21424,10 @@ func (a *DefaultApiService) DescribeCodingCIBuildStatisticsExecute(r ApiDescribe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -21553,10 +21553,10 @@ func (a *DefaultApiService) DescribeCodingCIBuildStepExecute(r ApiDescribeCoding
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -21682,10 +21682,10 @@ func (a *DefaultApiService) DescribeCodingCIBuildStepLogExecute(r ApiDescribeCod
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -21811,10 +21811,10 @@ func (a *DefaultApiService) DescribeCodingCIBuildsExecute(r ApiDescribeCodingCIB
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -21940,10 +21940,10 @@ func (a *DefaultApiService) DescribeCodingCIJobExecute(r ApiDescribeCodingCIJobR
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -22069,10 +22069,10 @@ func (a *DefaultApiService) DescribeCodingCIJobsExecute(r ApiDescribeCodingCIJob
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -22198,10 +22198,10 @@ func (a *DefaultApiService) DescribeCodingCurrentUserExecute(r ApiDescribeCoding
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -22327,10 +22327,10 @@ func (a *DefaultApiService) DescribeCodingProjectsExecute(r ApiDescribeCodingPro
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -22456,10 +22456,10 @@ func (a *DefaultApiService) DescribeCommitRefsExecute(r ApiDescribeCommitRefsReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -22585,10 +22585,10 @@ func (a *DefaultApiService) DescribeCommitsBetweenCommitAndCommitExecute(r ApiDe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -22714,10 +22714,10 @@ func (a *DefaultApiService) DescribeConfigTemplateListExecute(r ApiDescribeConfi
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -22843,10 +22843,10 @@ func (a *DefaultApiService) DescribeDepartmentExecute(r ApiDescribeDepartmentReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -22972,10 +22972,10 @@ func (a *DefaultApiService) DescribeDepartmentMembersExecute(r ApiDescribeDepart
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -23101,10 +23101,10 @@ func (a *DefaultApiService) DescribeDepotByNameInfoExecute(r ApiDescribeDepotByN
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -23230,10 +23230,10 @@ func (a *DefaultApiService) DescribeDepotDefaultBranchExecute(r ApiDescribeDepot
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -23359,10 +23359,10 @@ func (a *DefaultApiService) DescribeDepotFilePushRulesExecute(r ApiDescribeDepot
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -23488,10 +23488,10 @@ func (a *DefaultApiService) DescribeDepotMergeRequestsExecute(r ApiDescribeDepot
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -23617,10 +23617,10 @@ func (a *DefaultApiService) DescribeDepotPushSettingExecute(r ApiDescribeDepotPu
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -23746,10 +23746,10 @@ func (a *DefaultApiService) DescribeDepotSpecDetailExecute(r ApiDescribeDepotSpe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -23875,10 +23875,10 @@ func (a *DefaultApiService) DescribeDepotSpecsExecute(r ApiDescribeDepotSpecsReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -24004,10 +24004,10 @@ func (a *DefaultApiService) DescribeDifferentBetween2CommitsExecute(r ApiDescrib
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -24133,10 +24133,10 @@ func (a *DefaultApiService) DescribeDifferentBetweenTwoCommitsExecute(r ApiDescr
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -24262,10 +24262,10 @@ func (a *DefaultApiService) DescribeGitBlameInfoExecute(r ApiDescribeGitBlameInf
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -24391,10 +24391,10 @@ func (a *DefaultApiService) DescribeGitBlobExecute(r ApiDescribeGitBlobRequest) 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -24520,10 +24520,10 @@ func (a *DefaultApiService) DescribeGitBlobRawExecute(r ApiDescribeGitBlobRawReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -24649,10 +24649,10 @@ func (a *DefaultApiService) DescribeGitBranchExecute(r ApiDescribeGitBranchReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -24778,10 +24778,10 @@ func (a *DefaultApiService) DescribeGitBranchListExecute(r ApiDescribeGitBranchL
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -24907,10 +24907,10 @@ func (a *DefaultApiService) DescribeGitBranchesExecute(r ApiDescribeGitBranchesR
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -25036,10 +25036,10 @@ func (a *DefaultApiService) DescribeGitBranchesByShaExecute(r ApiDescribeGitBran
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -25165,10 +25165,10 @@ func (a *DefaultApiService) DescribeGitCommitCommentsExecute(r ApiDescribeGitCom
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -25294,10 +25294,10 @@ func (a *DefaultApiService) DescribeGitCommitDiffExecute(r ApiDescribeGitCommitD
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -25423,10 +25423,10 @@ func (a *DefaultApiService) DescribeGitCommitFilePathListExecute(r ApiDescribeGi
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -25552,10 +25552,10 @@ func (a *DefaultApiService) DescribeGitCommitInfoExecute(r ApiDescribeGitCommitI
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -25681,10 +25681,10 @@ func (a *DefaultApiService) DescribeGitCommitInfosExecute(r ApiDescribeGitCommit
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -25810,10 +25810,10 @@ func (a *DefaultApiService) DescribeGitCommitNoteExecute(r ApiDescribeGitCommitN
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -25939,10 +25939,10 @@ func (a *DefaultApiService) DescribeGitCommitStatusExecute(r ApiDescribeGitCommi
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -26068,10 +26068,10 @@ func (a *DefaultApiService) DescribeGitCommitsInPageExecute(r ApiDescribeGitComm
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -26197,10 +26197,10 @@ func (a *DefaultApiService) DescribeGitContributorsExecute(r ApiDescribeGitContr
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -26447,10 +26447,10 @@ func (a *DefaultApiService) DescribeGitDepotDeployKeysExecute(r ApiDescribeGitDe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -26576,10 +26576,10 @@ func (a *DefaultApiService) DescribeGitFileExecute(r ApiDescribeGitFileRequest) 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -26705,10 +26705,10 @@ func (a *DefaultApiService) DescribeGitFileContentExecute(r ApiDescribeGitFileCo
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -26834,10 +26834,10 @@ func (a *DefaultApiService) DescribeGitFileStatExecute(r ApiDescribeGitFileStatR
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -26963,10 +26963,10 @@ func (a *DefaultApiService) DescribeGitFilesExecute(r ApiDescribeGitFilesRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -27092,10 +27092,10 @@ func (a *DefaultApiService) DescribeGitMergeBaseExecute(r ApiDescribeGitMergeBas
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -27221,10 +27221,10 @@ func (a *DefaultApiService) DescribeGitMergeRequestDiffDetailExecute(r ApiDescri
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -27350,10 +27350,10 @@ func (a *DefaultApiService) DescribeGitMergeRequestDiffsExecute(r ApiDescribeGit
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -27479,10 +27479,10 @@ func (a *DefaultApiService) DescribeGitMergeRequestParticipantsExecute(r ApiDesc
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -27608,10 +27608,10 @@ func (a *DefaultApiService) DescribeGitMergeRequestsByShaExecute(r ApiDescribeGi
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -27737,10 +27737,10 @@ func (a *DefaultApiService) DescribeGitProjectDeployKeysExecute(r ApiDescribeGit
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -27866,10 +27866,10 @@ func (a *DefaultApiService) DescribeGitProtectedTagsExecute(r ApiDescribeGitProt
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -27995,10 +27995,10 @@ func (a *DefaultApiService) DescribeGitProtectedTagsByRuleExecute(r ApiDescribeG
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -28124,10 +28124,10 @@ func (a *DefaultApiService) DescribeGitRefExecute(r ApiDescribeGitRefRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -28253,10 +28253,10 @@ func (a *DefaultApiService) DescribeGitRefsByShaExecute(r ApiDescribeGitRefsBySh
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -28382,10 +28382,10 @@ func (a *DefaultApiService) DescribeGitReleaseDetailExecute(r ApiDescribeGitRele
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -28511,10 +28511,10 @@ func (a *DefaultApiService) DescribeGitReleasesExecute(r ApiDescribeGitReleasesR
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -28640,10 +28640,10 @@ func (a *DefaultApiService) DescribeGitTagExecute(r ApiDescribeGitTagRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -28769,10 +28769,10 @@ func (a *DefaultApiService) DescribeGitTagsExecute(r ApiDescribeGitTagsRequest) 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -28898,10 +28898,10 @@ func (a *DefaultApiService) DescribeGitTagsByBranchExecute(r ApiDescribeGitTagsB
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -29027,10 +29027,10 @@ func (a *DefaultApiService) DescribeGitTagsByShaExecute(r ApiDescribeGitTagsBySh
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -29156,10 +29156,10 @@ func (a *DefaultApiService) DescribeGitTreeExecute(r ApiDescribeGitTreeRequest) 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -29285,10 +29285,10 @@ func (a *DefaultApiService) DescribeGrantObjectsOnResourceExecute(r ApiDescribeG
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -29414,10 +29414,10 @@ func (a *DefaultApiService) DescribeGrantUsersOnResourceExecute(r ApiDescribeGra
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -29543,10 +29543,10 @@ func (a *DefaultApiService) DescribeHostServerInstanceExecute(r ApiDescribeHostS
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -29672,10 +29672,10 @@ func (a *DefaultApiService) DescribeIssueExecute(r ApiDescribeIssueRequest) (*De
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -29801,10 +29801,10 @@ func (a *DefaultApiService) DescribeIssueAttachmentPreSignedUrlExecute(r ApiDesc
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -29930,10 +29930,10 @@ func (a *DefaultApiService) DescribeIssueCommentListExecute(r ApiDescribeIssueCo
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -30059,10 +30059,10 @@ func (a *DefaultApiService) DescribeIssueCustomFieldLogListExecute(r ApiDescribe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -30188,10 +30188,10 @@ func (a *DefaultApiService) DescribeIssueFileUrlExecute(r ApiDescribeIssueFileUr
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -30317,10 +30317,10 @@ func (a *DefaultApiService) DescribeIssueFilterListExecute(r ApiDescribeIssueFil
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -30446,10 +30446,10 @@ func (a *DefaultApiService) DescribeIssueListExecute(r ApiDescribeIssueListReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -30575,10 +30575,10 @@ func (a *DefaultApiService) DescribeIssueListWithPageExecute(r ApiDescribeIssueL
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -30704,10 +30704,10 @@ func (a *DefaultApiService) DescribeIssueModuleListExecute(r ApiDescribeIssueMod
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -30833,10 +30833,10 @@ func (a *DefaultApiService) DescribeIssueReferenceResourcesExecute(r ApiDescribe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -30962,10 +30962,10 @@ func (a *DefaultApiService) DescribeIssueRelatedWorkItemListExecute(r ApiDescrib
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -31091,10 +31091,10 @@ func (a *DefaultApiService) DescribeIssueReleaseListExecute(r ApiDescribeIssueRe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -31220,10 +31220,10 @@ func (a *DefaultApiService) DescribeIssueStatusChangeLogListExecute(r ApiDescrib
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -31349,10 +31349,10 @@ func (a *DefaultApiService) DescribeIssueWorkLogListExecute(r ApiDescribeIssueWo
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -31478,10 +31478,10 @@ func (a *DefaultApiService) DescribeIterationExecute(r ApiDescribeIterationReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -31607,10 +31607,10 @@ func (a *DefaultApiService) DescribeIterationListExecute(r ApiDescribeIterationL
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -31736,10 +31736,10 @@ func (a *DefaultApiService) DescribeMemberSshKeyExecute(r ApiDescribeMemberSshKe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -31865,10 +31865,10 @@ func (a *DefaultApiService) DescribeMergeReqCommitsExecute(r ApiDescribeMergeReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -31994,10 +31994,10 @@ func (a *DefaultApiService) DescribeMergeReqInfoExecute(r ApiDescribeMergeReqInf
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -32123,10 +32123,10 @@ func (a *DefaultApiService) DescribeMergeRequestExecute(r ApiDescribeMergeReques
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -32252,10 +32252,10 @@ func (a *DefaultApiService) DescribeMergeRequestFileDiffExecute(r ApiDescribeMer
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -32381,10 +32381,10 @@ func (a *DefaultApiService) DescribeMergeRequestLogExecute(r ApiDescribeMergeReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -32510,10 +32510,10 @@ func (a *DefaultApiService) DescribeMergeRequestReviewersExecute(r ApiDescribeMe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -32639,10 +32639,10 @@ func (a *DefaultApiService) DescribeMyDepotsExecute(r ApiDescribeMyDepotsRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -32768,10 +32768,10 @@ func (a *DefaultApiService) DescribeNotesByCommitsExecute(r ApiDescribeNotesByCo
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -32897,10 +32897,10 @@ func (a *DefaultApiService) DescribeOneProjectExecute(r ApiDescribeOneProjectReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -33026,10 +33026,10 @@ func (a *DefaultApiService) DescribePersonalExternalDepotsExecute(r ApiDescribeP
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -33155,10 +33155,10 @@ func (a *DefaultApiService) DescribePinyinExecute(r ApiDescribePinyinRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -33284,10 +33284,10 @@ func (a *DefaultApiService) DescribePoliciesOnResourceTypeExecute(r ApiDescribeP
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -33413,10 +33413,10 @@ func (a *DefaultApiService) DescribePolicyExecute(r ApiDescribePolicyRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -33542,10 +33542,10 @@ func (a *DefaultApiService) DescribePreSignUploadUrlExecute(r ApiDescribePreSign
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -33671,10 +33671,10 @@ func (a *DefaultApiService) DescribePredicatePolicyOnResourceExecute(r ApiDescri
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -33800,10 +33800,10 @@ func (a *DefaultApiService) DescribeProgramProjectsExecute(r ApiDescribeProgramP
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -33929,10 +33929,10 @@ func (a *DefaultApiService) DescribeProgramsExecute(r ApiDescribeProgramsRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -34058,10 +34058,10 @@ func (a *DefaultApiService) DescribeProjectAnnouncementExecute(r ApiDescribeProj
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -34187,10 +34187,10 @@ func (a *DefaultApiService) DescribeProjectAnnouncementsExecute(r ApiDescribePro
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -34316,10 +34316,10 @@ func (a *DefaultApiService) DescribeProjectByNameExecute(r ApiDescribeProjectByN
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -34445,10 +34445,10 @@ func (a *DefaultApiService) DescribeProjectCredentialsExecute(r ApiDescribeProje
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -34574,10 +34574,10 @@ func (a *DefaultApiService) DescribeProjectDepotBranchesExecute(r ApiDescribePro
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -34703,10 +34703,10 @@ func (a *DefaultApiService) DescribeProjectDepotCommitsExecute(r ApiDescribeProj
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -34832,10 +34832,10 @@ func (a *DefaultApiService) DescribeProjectDepotInfoListExecute(r ApiDescribePro
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -34961,10 +34961,10 @@ func (a *DefaultApiService) DescribeProjectDepotTagsExecute(r ApiDescribeProject
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -35090,10 +35090,10 @@ func (a *DefaultApiService) DescribeProjectDepotsExecute(r ApiDescribeProjectDep
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -35219,10 +35219,10 @@ func (a *DefaultApiService) DescribeProjectIssueFieldListExecute(r ApiDescribePr
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -35348,10 +35348,10 @@ func (a *DefaultApiService) DescribeProjectIssueStatusListExecute(r ApiDescribeP
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -35477,10 +35477,10 @@ func (a *DefaultApiService) DescribeProjectIssueTypeListExecute(r ApiDescribePro
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -35606,10 +35606,10 @@ func (a *DefaultApiService) DescribeProjectLabelsExecute(r ApiDescribeProjectLab
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -35735,10 +35735,10 @@ func (a *DefaultApiService) DescribeProjectMemberPrincipalsExecute(r ApiDescribe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -35864,10 +35864,10 @@ func (a *DefaultApiService) DescribeProjectMembersExecute(r ApiDescribeProjectMe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -35993,10 +35993,10 @@ func (a *DefaultApiService) DescribeProjectMergeRequestsExecute(r ApiDescribePro
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -36122,10 +36122,10 @@ func (a *DefaultApiService) DescribeProjectRolesExecute(r ApiDescribeProjectRole
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -36251,10 +36251,10 @@ func (a *DefaultApiService) DescribeProjectsByFeatureExecute(r ApiDescribeProjec
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -36380,10 +36380,10 @@ func (a *DefaultApiService) DescribeProtectedBranchExecute(r ApiDescribeProtecte
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -36509,10 +36509,10 @@ func (a *DefaultApiService) DescribeProtectedBranchMembersExecute(r ApiDescribeP
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -36638,10 +36638,10 @@ func (a *DefaultApiService) DescribeProtectedBranchesExecute(r ApiDescribeProtec
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -36767,10 +36767,10 @@ func (a *DefaultApiService) DescribeRelatedCaseListExecute(r ApiDescribeRelatedC
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -36896,10 +36896,10 @@ func (a *DefaultApiService) DescribeReleaseExecute(r ApiDescribeReleaseRequest) 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -37025,10 +37025,10 @@ func (a *DefaultApiService) DescribeReleaseIssueListExecute(r ApiDescribeRelease
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -37154,10 +37154,10 @@ func (a *DefaultApiService) DescribeReleaseListExecute(r ApiDescribeReleaseListR
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -37283,10 +37283,10 @@ func (a *DefaultApiService) DescribeReportExecute(r ApiDescribeReportRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -37412,10 +37412,10 @@ func (a *DefaultApiService) DescribeReportListExecute(r ApiDescribeReportListReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -37541,10 +37541,10 @@ func (a *DefaultApiService) DescribeRequirementDefectRelationExecute(r ApiDescri
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -37670,10 +37670,10 @@ func (a *DefaultApiService) DescribeRequirementTestCaseListExecute(r ApiDescribe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -37799,10 +37799,10 @@ func (a *DefaultApiService) DescribeResourceReferencesExecute(r ApiDescribeResou
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -37928,10 +37928,10 @@ func (a *DefaultApiService) DescribeResourceReferencesCitedExecute(r ApiDescribe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -38057,10 +38057,10 @@ func (a *DefaultApiService) DescribeResourceReferencesCitingExecute(r ApiDescrib
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -38186,10 +38186,10 @@ func (a *DefaultApiService) DescribeResourceScopeListOnPolicyExecute(r ApiDescri
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -38315,10 +38315,10 @@ func (a *DefaultApiService) DescribeSelfMergeRequestsExecute(r ApiDescribeSelfMe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -38444,10 +38444,10 @@ func (a *DefaultApiService) DescribeSingeMergeRequestNotesExecute(r ApiDescribeS
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -38573,10 +38573,10 @@ func (a *DefaultApiService) DescribeSshKeyExecute(r ApiDescribeSshKeyRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -38702,10 +38702,10 @@ func (a *DefaultApiService) DescribeSubIssueListExecute(r ApiDescribeSubIssueLis
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -38831,10 +38831,10 @@ func (a *DefaultApiService) DescribeTeamExecute(r ApiDescribeTeamRequest) (*Desc
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -38960,10 +38960,10 @@ func (a *DefaultApiService) DescribeTeamAdminMembersExecute(r ApiDescribeTeamAdm
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -39089,10 +39089,10 @@ func (a *DefaultApiService) DescribeTeamArtifactsExecute(r ApiDescribeTeamArtifa
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -39218,10 +39218,10 @@ func (a *DefaultApiService) DescribeTeamDepotInfoListExecute(r ApiDescribeTeamDe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -39347,10 +39347,10 @@ func (a *DefaultApiService) DescribeTeamDepotsExecute(r ApiDescribeTeamDepotsReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -39476,10 +39476,10 @@ func (a *DefaultApiService) DescribeTeamIssueTypeListExecute(r ApiDescribeTeamIs
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -39605,10 +39605,10 @@ func (a *DefaultApiService) DescribeTeamMemberExecute(r ApiDescribeTeamMemberReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -39734,10 +39734,10 @@ func (a *DefaultApiService) DescribeTeamMemberByEmailExecute(r ApiDescribeTeamMe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -39863,10 +39863,10 @@ func (a *DefaultApiService) DescribeTeamMembersExecute(r ApiDescribeTeamMembersR
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -39992,10 +39992,10 @@ func (a *DefaultApiService) DescribeTestExecute(r ApiDescribeTestRequest) (*Desc
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -40121,10 +40121,10 @@ func (a *DefaultApiService) DescribeTestCaseExecute(r ApiDescribeTestCaseRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -40250,10 +40250,10 @@ func (a *DefaultApiService) DescribeTestCaseListExecute(r ApiDescribeTestCaseLis
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -40379,10 +40379,10 @@ func (a *DefaultApiService) DescribeTestCaseSectionListExecute(r ApiDescribeTest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -40508,10 +40508,10 @@ func (a *DefaultApiService) DescribeTestDefectListExecute(r ApiDescribeTestDefec
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -40637,10 +40637,10 @@ func (a *DefaultApiService) DescribeTestListExecute(r ApiDescribeTestListRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -40766,10 +40766,10 @@ func (a *DefaultApiService) DescribeTestRunExecute(r ApiDescribeTestRunRequest) 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -40895,10 +40895,10 @@ func (a *DefaultApiService) DescribeTestRunListExecute(r ApiDescribeTestRunListR
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -41024,10 +41024,10 @@ func (a *DefaultApiService) DescribeUserGroupsExecute(r ApiDescribeUserGroupsReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -41153,10 +41153,10 @@ func (a *DefaultApiService) DescribeUserProjectsExecute(r ApiDescribeUserProject
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -41282,10 +41282,10 @@ func (a *DefaultApiService) DescribeUsersByGroupIdExecute(r ApiDescribeUsersByGr
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -41411,10 +41411,10 @@ func (a *DefaultApiService) DescribeUsersOnResourceAndGrantObjectExecute(r ApiDe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -41540,10 +41540,10 @@ func (a *DefaultApiService) DescribeWorkItemSalvageExecute(r ApiDescribeWorkItem
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -41669,10 +41669,10 @@ func (a *DefaultApiService) DescribeWorkbenchIssueListExecute(r ApiDescribeWorkb
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -41798,10 +41798,10 @@ func (a *DefaultApiService) DetachFromResourceExecute(r ApiDetachFromResourceReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -41927,10 +41927,10 @@ func (a *DefaultApiService) DetachResourceScopeOnPolicyExecute(r ApiDetachResour
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -42056,10 +42056,10 @@ func (a *DefaultApiService) ForbiddenArtifactVersionExecute(r ApiForbiddenArtifa
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -42185,10 +42185,10 @@ func (a *DefaultApiService) ModifyArtifactCreditExecute(r ApiModifyArtifactCredi
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -42314,10 +42314,10 @@ func (a *DefaultApiService) ModifyArtifactPropertiesExecute(r ApiModifyArtifactP
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -42443,10 +42443,10 @@ func (a *DefaultApiService) ModifyBranchProtectionExecute(r ApiModifyBranchProte
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -42572,10 +42572,10 @@ func (a *DefaultApiService) ModifyBranchProtectionMemberPermissionExecute(r ApiM
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -42701,10 +42701,10 @@ func (a *DefaultApiService) ModifyCdCloudAccountExecute(r ApiModifyCdCloudAccoun
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -42830,10 +42830,10 @@ func (a *DefaultApiService) ModifyCdHostServerGroupExecute(r ApiModifyCdHostServ
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -42959,10 +42959,10 @@ func (a *DefaultApiService) ModifyCdPipelineExecute(r ApiModifyCdPipelineRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -43088,10 +43088,10 @@ func (a *DefaultApiService) ModifyChooseDepotSpecExecute(r ApiModifyChooseDepotS
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -43217,10 +43217,10 @@ func (a *DefaultApiService) ModifyCloseMRExecute(r ApiModifyCloseMRRequest) (*De
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -43346,10 +43346,10 @@ func (a *DefaultApiService) ModifyCodingCIAgentEnableExecute(r ApiModifyCodingCI
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -43475,10 +43475,10 @@ func (a *DefaultApiService) ModifyCodingCIJobExecute(r ApiModifyCodingCIJobReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -43604,10 +43604,10 @@ func (a *DefaultApiService) ModifyDefaultBranchExecute(r ApiModifyDefaultBranchR
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -43733,10 +43733,10 @@ func (a *DefaultApiService) ModifyDefectRelatedRequirementExecute(r ApiModifyDef
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -43862,10 +43862,10 @@ func (a *DefaultApiService) ModifyDepartmentExecute(r ApiModifyDepartmentRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -43991,10 +43991,10 @@ func (a *DefaultApiService) ModifyDepartmentAssigneeExecute(r ApiModifyDepartmen
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -44120,10 +44120,10 @@ func (a *DefaultApiService) ModifyDepartmentMemberExecute(r ApiModifyDepartmentM
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -44249,10 +44249,10 @@ func (a *DefaultApiService) ModifyDepotDescriptionExecute(r ApiModifyDepotDescri
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -44378,10 +44378,10 @@ func (a *DefaultApiService) ModifyDepotFilePushRuleExecute(r ApiModifyDepotFileP
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -44507,10 +44507,10 @@ func (a *DefaultApiService) ModifyDepotFilePushRuleDenyPrivilegeExecute(r ApiMod
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -44636,10 +44636,10 @@ func (a *DefaultApiService) ModifyDepotLevelDepotSpecExecute(r ApiModifyDepotLev
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -44765,10 +44765,10 @@ func (a *DefaultApiService) ModifyDepotNameExecute(r ApiModifyDepotNameRequest) 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -44894,10 +44894,10 @@ func (a *DefaultApiService) ModifyDepotPushSettingExecute(r ApiModifyDepotPushSe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -45023,10 +45023,10 @@ func (a *DefaultApiService) ModifyDepotQuotaExecute(r ApiModifyDepotQuotaRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -45152,10 +45152,10 @@ func (a *DefaultApiService) ModifyDepotSettingsExecute(r ApiModifyDepotSettingsR
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -45281,10 +45281,10 @@ func (a *DefaultApiService) ModifyDepotSharedSettingExecute(r ApiModifyDepotShar
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -45410,10 +45410,10 @@ func (a *DefaultApiService) ModifyGitCherryPickExecute(r ApiModifyGitCherryPickR
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -45539,10 +45539,10 @@ func (a *DefaultApiService) ModifyGitCommitRevertExecute(r ApiModifyGitCommitRev
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -45668,10 +45668,10 @@ func (a *DefaultApiService) ModifyGitCommitStatusExecute(r ApiModifyGitCommitSta
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -45797,10 +45797,10 @@ func (a *DefaultApiService) ModifyGitDepotArchiveExecute(r ApiModifyGitDepotArch
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -45926,10 +45926,10 @@ func (a *DefaultApiService) ModifyGitDepotUnarchiveExecute(r ApiModifyGitDepotUn
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -46055,10 +46055,10 @@ func (a *DefaultApiService) ModifyGitFilesExecute(r ApiModifyGitFilesRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -46184,10 +46184,10 @@ func (a *DefaultApiService) ModifyGitMergeBranchExecute(r ApiModifyGitMergeBranc
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -46313,10 +46313,10 @@ func (a *DefaultApiService) ModifyGitMergeRequestExecute(r ApiModifyGitMergeRequ
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -46442,10 +46442,10 @@ func (a *DefaultApiService) ModifyGitMergeRequestRebaseExecute(r ApiModifyGitMer
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -46571,10 +46571,10 @@ func (a *DefaultApiService) ModifyGitRebaseExecute(r ApiModifyGitRebaseRequest) 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -46700,10 +46700,10 @@ func (a *DefaultApiService) ModifyGitReleaseExecute(r ApiModifyGitReleaseRequest
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -46829,10 +46829,10 @@ func (a *DefaultApiService) ModifyGitTransferExecute(r ApiModifyGitTransferReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -46958,10 +46958,10 @@ func (a *DefaultApiService) ModifyIssueExecute(r ApiModifyIssueRequest) (*Modify
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -47087,10 +47087,10 @@ func (a *DefaultApiService) ModifyIssueCommentExecute(r ApiModifyIssueCommentReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -47216,10 +47216,10 @@ func (a *DefaultApiService) ModifyIssueDescriptionExecute(r ApiModifyIssueDescri
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -47345,10 +47345,10 @@ func (a *DefaultApiService) ModifyIssueParentRequirementExecute(r ApiModifyIssue
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -47474,10 +47474,10 @@ func (a *DefaultApiService) ModifyIterationExecute(r ApiModifyIterationRequest) 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -47603,10 +47603,10 @@ func (a *DefaultApiService) ModifyMergeMRExecute(r ApiModifyMergeMRRequest) (*Mo
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -47732,10 +47732,10 @@ func (a *DefaultApiService) ModifyMergeRequestBasicSettingsExecute(r ApiModifyMe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -47861,10 +47861,10 @@ func (a *DefaultApiService) ModifyMergeRequestMergeCommitMessageTemplateExecute(
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -47990,10 +47990,10 @@ func (a *DefaultApiService) ModifyMergeRequestSquashCommitMessageTemplateExecute
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -48119,10 +48119,10 @@ func (a *DefaultApiService) ModifyPolicyExecute(r ApiModifyPolicyRequest) (*Modi
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -48248,10 +48248,10 @@ func (a *DefaultApiService) ModifyProjectExecute(r ApiModifyProjectRequest) (*De
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -48377,10 +48377,10 @@ func (a *DefaultApiService) ModifyProjectAnnouncementExecute(r ApiModifyProjectA
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -48506,10 +48506,10 @@ func (a *DefaultApiService) ModifyProjectLabelExecute(r ApiModifyProjectLabelReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -48635,10 +48635,10 @@ func (a *DefaultApiService) ModifyProjectPermissionExecute(r ApiModifyProjectPer
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -48764,10 +48764,10 @@ func (a *DefaultApiService) ModifyReleaseExecute(r ApiModifyReleaseRequest) (*Mo
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -48893,10 +48893,10 @@ func (a *DefaultApiService) ModifyTeamLevelDepotSpecExecute(r ApiModifyTeamLevel
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -49022,10 +49022,10 @@ func (a *DefaultApiService) ModifyTeamMemberLockedExecute(r ApiModifyTeamMemberL
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -49151,10 +49151,10 @@ func (a *DefaultApiService) ModifyTeamMemberUnlockedExecute(r ApiModifyTeamMembe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -49280,10 +49280,10 @@ func (a *DefaultApiService) ModifyTestCaseExecute(r ApiModifyTestCaseRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -49409,10 +49409,10 @@ func (a *DefaultApiService) ModifyTestCaseSectionExecute(r ApiModifyTestCaseSect
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -49538,10 +49538,10 @@ func (a *DefaultApiService) ModifyTestRunExecute(r ApiModifyTestRunRequest) (*Mo
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -49667,10 +49667,10 @@ func (a *DefaultApiService) ModifyWorkItemSplitIssuesExecute(r ApiModifyWorkItem
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -49796,10 +49796,10 @@ func (a *DefaultApiService) PlanIterationIssueExecute(r ApiPlanIterationIssueReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -49925,10 +49925,10 @@ func (a *DefaultApiService) ReleaseArtifactVersionExecute(r ApiReleaseArtifactVe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -50054,10 +50054,10 @@ func (a *DefaultApiService) ReorderCdPipelinesExecute(r ApiReorderCdPipelinesReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -50183,10 +50183,10 @@ func (a *DefaultApiService) SetGrantToResourceExecute(r ApiSetGrantToResourceReq
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -50312,10 +50312,10 @@ func (a *DefaultApiService) SetPredicatePolicyOnResourceExecute(r ApiSetPredicat
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -50441,10 +50441,10 @@ func (a *DefaultApiService) StopCodingCIBuildExecute(r ApiStopCodingCIBuildReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -50570,10 +50570,10 @@ func (a *DefaultApiService) TriggerCdPipelineExecute(r ApiTriggerCdPipelineReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -50699,10 +50699,10 @@ func (a *DefaultApiService) TriggerCodingCIBuildExecute(r ApiTriggerCodingCIBuil
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -50828,10 +50828,10 @@ func (a *DefaultApiService) TriggerCodingScanExecute(r ApiTriggerCodingScanReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
@@ -50957,10 +50957,10 @@ func (a *DefaultApiService) UpdateUserGroupByIdExecute(r ApiUpdateUserGroupByIdR
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.authorization == nil {
-		return localVarReturnValue, nil, reportError("authorization is required and must be specified")
+		return localVarReturnValue, nil, ReportError("authorization is required and must be specified")
 	}
 	if r.action == nil {
-		return localVarReturnValue, nil, reportError("action is required and must be specified")
+		return localVarReturnValue, nil, ReportError("action is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "Action", r.action, "form", "")
